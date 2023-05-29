@@ -27,24 +27,25 @@ export default function Login({ history }) {
 
     return (
         <div className="container">
-            <h1>Entrar</h1>
+            <h1>Log In</h1>
             <div className="form-container">
                 <Form onSubmit={handleSubmit}>
                     <Input name="email" type="email" />
                     <Input name="password" type="password" />
                     {!isLoading && (
-                        <button type="submit">Entrar</button>
+                        <button type="submit">Log In</button>
                     )}
                     {isLoading && (
-                        <button type="button" disabled>Aguarde...</button>
+                        <button type="button" disabled>Loading...</button>
                     )}
                 </Form>
                 {error && (
                     <span>{error}</span>
                 )}
                 <div className="link-container">
-                    <Link to='/register'>Cadastre-se</Link>
-                    <Link to='/reset-password'>Redefinir senha</Link>
+                    <Link to='/register'>Register</Link>
+                    <Link to='/reset-password'>Reset Password</Link>
+                    <Link to='/text'>Save Text Demo</Link>
                 </div>
             </div>
         </div>

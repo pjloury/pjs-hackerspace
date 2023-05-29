@@ -28,7 +28,7 @@ export default function Register({ history }) {
 
     return (
         <div className="container">
-            <h1>Cadastre-se</h1>
+            <h1>Register</h1>
             <div className="form-container">
                 <Form onSubmit={handleSubmit}>
                     <Input name="email" type="email" />
@@ -44,8 +44,8 @@ export default function Register({ history }) {
                     <span>{error}</span>
                 )}
                 <div className="link-container">
-                    <Link to='/'>Entrar</Link>
-                    <Link to='/reset-password'>Redefinir senha</Link>
+                    <Link to='/'>Sign In</Link>
+                    <Link to='/reset-password'>Reset Password</Link>
                 </div>
             </div>
         </div>

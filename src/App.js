@@ -4,12 +4,14 @@ import { PrivateRoute } from './components';
 import Login from './views/Login/Login';
 import Register from './views/Register/Register';
 import ResetPassword from './views/ResetPassword/ResetPassword';
+import SaveText from './views/SaveText/SaveText';
 import { Route, Switch } from "react-router-dom";
 
 const App = () => (
     <Switch>
         <Route path="/" exact component={Login} />
         <Route path="/reset-password" component={ResetPassword} />
+        <Route path="/text" component={SaveText} />
         <Route path="/register" component={Register} />
         <PrivateRoute component={Main} />
     </Switch>
